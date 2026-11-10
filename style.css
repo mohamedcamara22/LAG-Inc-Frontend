@@ -1,0 +1,38 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, sans-serif; color: #223044; background: #f3f6fa; }
+button, input, select { font: inherit; }
+button { background: #245b91; color: white; border: 1px solid #245b91; border-radius: 6px; padding: 10px 14px; cursor: pointer; }
+button:hover:not(:disabled) { filter: brightness(0.94); }
+button:disabled { opacity: 0.5; cursor: not-allowed; }
+.secondaire { background: white; color: #245b91; }
+.petit { padding: 6px 9px; font-size: 13px; }
+.entete { display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 18px 6%; background: #183e64; color: white; }
+.entete strong { display: block; font-size: 22px; }
+.entete small { display: block; margin-top: 5px; }
+.etiquette { font-size: 12px; background: #345b7e; padding: 7px; border-radius: 5px; }
+.contenu { max-width: 1100px; margin: 30px auto; padding: 0 20px; min-height: 65vh; }
+.carte { background: white; padding: 24px; border: 1px solid #dce4ed; border-radius: 10px; margin: 24px auto; }
+.connexion { max-width: 440px; }
+.connexion form { display: grid; gap: 15px; }
+label { display: grid; gap: 6px; font-weight: bold; font-size: 14px; }
+input, select { width: 100%; padding: 10px; border: 1px solid #bdc9d6; border-radius: 5px; background: white; }
+h1 { font-size: 26px; margin: 0 0 12px; }
+h2 { margin-top: 0; }
+h3 { font-size: 17px; }
+.ligne { display: flex; justify-content: space-between; align-items: center; gap: 15px; }
+.menu { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 20px; }
+.grille { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 12px; }
+.grille article, .modele { padding: 14px; border: 1px solid #dce4ed; border-radius: 7px; margin-bottom: 12px; }
+.formulaire { display: flex; flex-wrap: wrap; gap: 12px; align-items: end; margin-bottom: 18px; }
+.formulaire label { flex: 1 1 170px; }
+.ligne-tache { display: flex; gap: 10px; margin: 10px 0; }
+.ligne-tache input:first-child { flex: 3; }
+.ligne-tache input:last-child { flex: 1; }
+table { width: 100%; border-collapse: collapse; margin: 18px 0; display: block; overflow-x: auto; }
+th, td { text-align: left; padding: 10px; border-bottom: 1px solid #e0e7ef; white-space: nowrap; }
+th { background: #eaf0f7; }
+.note { color: #58697a; font-size: 13px; line-height: 1.5; }
+.erreur { color: #a72222; }
+.message { color: #234d70; font-weight: bold; }
+footer { text-align: center; padding: 20px; font-size: 12px; color: #607083; }
+@media (max-width: 600px) { .entete, .ligne { align-items: flex-start; flex-direction: column; } .carte { padding: 15px; } }
